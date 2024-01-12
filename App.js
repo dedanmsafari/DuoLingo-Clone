@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import { View, Alert, ActivityIndicator } from "react-native";
 import styles from "./App.styles";
-import MultipleImageQuestions from "./src/components/multipleImageQuestions/multipleImageQuestions.component";
-import OpenEndedQuestion from "./src/components/openEndedQuestion/openEndedQuestion.component";
+import CompleteSentenceQuestion from "./src/components/completeSentenceQuestion/completeSentence.component";
 import questions from "./assets/data/allQuestions";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Header from "./src/components/Header/header.component";
@@ -14,7 +13,6 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(
     questions[currentQuestionIndex]
   );
-
   const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
@@ -109,6 +107,14 @@ export default function App() {
           wrong={wrong}
         />
       )}
+      {currentQuestion.type === "COMPLETE_SENTENCE" && (
+        <CompleteSentenceQuestion
+          question={currentQuestion}
+          correct={correct}
+          wrong={wrong}
+        />
+      )}
+
       <StatusBar style="auto" />
     </View>
   );
