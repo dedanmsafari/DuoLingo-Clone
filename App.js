@@ -3,6 +3,8 @@ import { StatusBar } from "expo-status-bar";
 import { View, Alert, ActivityIndicator } from "react-native";
 import styles from "./App.styles";
 import CompleteSentenceQuestion from "./src/components/completeSentenceQuestion/completeSentence.component";
+import MultipleImageQuestions from "./src/components/multipleImageQuestions/multipleImageQuestions.component";
+import OpenEndedQuestion from "./src/components/openEndedQuestion/openEndedQuestion.component";
 import questions from "./assets/data/allQuestions";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Header from "./src/components/Header/header.component";
