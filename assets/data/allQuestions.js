@@ -1,15 +1,15 @@
 export default [
   {
-    id: "q1",
+    id: "a",
     type: "COMPLETE_SENTENCE",
     text: ["una", "nina,", "una"],
     answer: "mujer",
     options: ["yo", "el", "mujer", "la"],
   },
   {
-    id: "q2",
+    id: "b",
     type: "COMPLETE_SENTENCE",
-    text: "I work as a ",
+    text: ["I", "work", "as", "a"],
     answer: "dev",
     options: ["teacher", "pilot", "plumber", "dev"],
   },
