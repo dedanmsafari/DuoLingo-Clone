@@ -8,7 +8,7 @@ import Button from "../Button/button.component";
 const OpenEndedQuestion = ({ question, correct, wrong }) => {
   const [input, setInput] = useState("");
 
-  handlePress = () => {
+  const handlePress = () => {
     if (question.answer.toLowerCase().trim() === input.toLowerCase().trim()) {
       correct();
     } else {
