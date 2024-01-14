@@ -14,6 +14,13 @@ export default [
     options: ["teacher", "pilot", "plumber", "dev"],
   },
   {
+    id: "c",
+    type: "COMPLETE_SENTENCE",
+    text: ["I", "is", "a", "art"],
+    answer: "drawing",
+    options: ["engineering", "drawing", "sports", "nursing"],
+  },
+  {
     id: "q1",
     type: "IMAGE_MULTIPLE_CHOICE",
     question: 'Which of these is "the glass"?',
