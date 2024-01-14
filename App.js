@@ -4,6 +4,7 @@ import { View, Alert, ActivityIndicator } from "react-native";
 import styles from "./App.styles";
 import CompleteSentenceQuestion from "./src/components/completeSentenceQuestion/completeSentence.component";
 import MultipleImageQuestions from "./src/components/multipleImageQuestions/multipleImageQuestions.component";
+import CompleteMultiplePart from "./src/components/completeMultipleParts/completeMultipleParts.component";
 import OpenEndedQuestion from "./src/components/openEndedQuestion/openEndedQuestion.component";
 import questions from "./assets/data/allQuestions";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -111,6 +112,13 @@ export default function App() {
       )}
       {currentQuestion.type === "COMPLETE_SENTENCE" && (
         <CompleteSentenceQuestion
+          question={currentQuestion}
+          correct={correct}
+          wrong={wrong}
+        />
+      )}
+      {currentQuestion.type === "COMPLETE_MULTIPLE_PARTS" && (
+        <CompleteMultiplePart
           question={currentQuestion}
           correct={correct}
           wrong={wrong}
