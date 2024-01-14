@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   selectionOptions: {
+    marginTop: 10,
     marginRight: 20,
     padding: 12,
     borderWidth: 2,
