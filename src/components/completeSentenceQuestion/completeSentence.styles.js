@@ -39,9 +39,10 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     flexWrap: "wrap",
+
     alignItems: "center",
     alignContent: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
   },
   selectionBackground: {
     backgroundColor: "gray",
