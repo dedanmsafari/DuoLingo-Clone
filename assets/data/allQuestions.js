@@ -1,5 +1,30 @@
 export default [
   {
+    id: "m1",
+    type: "COMPLETE_MULTIPLE_PARTS",
+    parts: [
+      {
+        isBlank: true,
+        text: "I",
+      },
+      {
+        text: "work",
+      },
+      {
+        text: "as",
+      },
+      {
+        text: "a",
+      },
+      {
+        isBlank: true,
+        text: "dev",
+      },
+    ],
+    options: ["I", "them", "yours", "dev"],
+  },
+
+  {
     id: "a",
     type: "COMPLETE_SENTENCE",
     text: ["una", "nina,", "una"],
@@ -16,10 +41,11 @@ export default [
   {
     id: "c",
     type: "COMPLETE_SENTENCE",
-    text: ["I", "is", "a", "art"],
+    text: ["Which", "is", "an", "art"],
     answer: "drawing",
     options: ["engineering", "drawing", "sports", "nursing"],
   },
+
   {
     id: "q1",
     type: "IMAGE_MULTIPLE_CHOICE",
